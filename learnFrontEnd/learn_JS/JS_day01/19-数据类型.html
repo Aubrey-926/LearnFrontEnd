@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    基本数据类型：数字，字符串，布尔，undefined，
+    引用数据类型：对象，null
+    -->
+
+    <script>
+        // 字符串类型
+        /* 
+        只要变量中有一个变量是字符串， 在计算时， 就会直接变成拼接的操作， 不是数学计算
+        */
+       let a = "123";
+       let b = 456;
+       console.log(a+b); // 123456
+
+       // undefined类型， 本身没有任何含义， 就是没有赋值的变量
+
+       // null空类型（对象类型， 属于引用类型）
+        let c = null;
+        console.log(typeof(c));//通过typeof可以看出是什么数据类型
+
+        /* 数据类型转换
+        上面字符串拼接，发生了类型转换
+
+        1. 隐式类型转换， 计算机自己的行为， 如上面的字符串转换
+        2. 显示转换， 强制转换， 程序员自己决定的
+
+        */
+
+        let A1 = '1';
+        let B1 = 1;
+        console.log(A1-B1);//0
+        console.log(typeof(A1-B1)); // numebr
+        console.log(typeof(+a + b)); // number, 对于加号要转换， 将加号写在值的前面
+        
+        // 强制转换成数值类型
+        let str = "123";
+        strToInt = parseInt(str);
+        strToNum = Number(str);
+        strToFloat = parseFloat(str);
+        console.log(typeof(strToInt));
+        console.log(typeof(strToNum));
+        console.log(typeof(strToFloat));
+        
+
+        let miscellaneous = '123.1ada13';
+        mis = parseFloat(miscellaneous);
+        console.log("miscellaneous： " + mis);// 123.1 保留了前面的数字
+        console.log(typeof(mis));//Number
+
+
+
+    </script>
+</body>
+</html>
