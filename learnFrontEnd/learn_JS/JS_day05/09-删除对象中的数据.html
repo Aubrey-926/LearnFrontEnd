@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let zs = {
+            uname: "zhangsan",
+            eat:function(){
+                console.log("eating");
+            },
+            count:function(a,b){
+                console.log(a+b);
+            }
+        }
+        console.log(zs.uname);
+        zs.count(2,3);
+        
+        delete zs.uname;
+        console.log(zs.uname);//undefined
+
+        delete zs.eat;
+        console.log(zs.eat);
+    </script>
+</body>
+</html>

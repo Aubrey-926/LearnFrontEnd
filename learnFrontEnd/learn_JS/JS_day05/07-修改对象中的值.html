@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let zs = {
+            uname: 'zs',
+            eat:function(){
+                console.log('eating');
+            }
+        }
+
+        zs['uname']='ls';
+        zs.uname='ww';
+        console.log(zs.uname);
+
+        // 修改对象中的方法
+        zs.eat = function(){
+            console.log('吃饭');
+        }
+
+        zs.eat();
+
+
+    </script>
+</body>
+</html>

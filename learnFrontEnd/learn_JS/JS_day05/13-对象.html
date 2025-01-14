@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //对象其实也是一个存放数据的容器
+        let students = [
+
+        {name : "zs",age:11,gender: "female",country:"china"},
+        {name : "ls",age:12,gender: "male",country:"china"},
+        {name : "ww",age:13,gender: "female",country:"china"},
+
+        ]
+
+        for(let i =0;i<students.length;i++){ // 打印的符号是` 不是单引号
+            console.log(`student\'s name:${students[i].name} student\'s age: ${students[i].age}`)
+        }
+
+        
+    </script>
+</body>
+</html>

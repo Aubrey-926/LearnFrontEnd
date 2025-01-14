@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        强制类型转换， 转字符串类型
+        1. String(变量)
+        2. 变量.toString()
+        二者区别：
+        String(变量)：可以将任何一种数据类类型转换成字符串类型
+        变量.toString(): 不能将undefined类型转换成字符串
+        */
+
+        let a = undefined;
+        c = String(a);
+        // b = a.toString(); // TypeError
+        console.log(c);
+        // console.log(b);
+        console.log(typeof(c));
+        // console.log(typeof(b));
+
+        let num =123;
+        num = num.toString();
+        console.log(num+1); // 1231
+        
+
+
+    </script>
+</body>
+</html>

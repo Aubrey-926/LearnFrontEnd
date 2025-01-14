@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let peng ={
+            uname: 'aubrey',
+            age:25,
+            weight:'80kg',
+            code:function(){
+                console.log('coding');
+            },
+            english:function(){
+                console.log('how are you');
+            }
+        }
+
+        console.log(peng['uname']);
+        console.log(peng.age);
+
+        peng.code();
+        peng['english']();
+        peng['english','code']();
+
+    </script>
+</body>
+</html>
