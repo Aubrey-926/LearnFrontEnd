@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* 
+        局部作用域
+        1. 函数作用域， let， var， const
+        2. 块作用域， ES6的内容， 只有let，const声明的变量
+        
+        局部作用域能够使用全局变量
+        */
+
+        /* 
+        全局作用域
+        
+        给window对象，添加一个属性，这个属性就是全局变量, 即使他在局部作用域中声明， 也能在外面访问到
+        */
+       
+       function fn(){
+           window.B = 200;
+           c = 300;//这种没有关键字声明的变量， 在函数调用之后， c会是一个全局变量（不推荐） 
+       }
+
+       fn();//需要先调用这个函数创建B
+
+       console.log(B);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        如果形参只有一个， 则可以省略小括号
+        如哦个函数体只有一行函数， 可以省略大括号， 并且默认表示return函数体
+         
+        基本格式：()=>{}
+        小括号放形参， 花括号是函数体
+        */
+       //let fn =()=>{}
+       
+       let fn = (x) => {
+        return x*x
+       }
+       console.log(fn(5))
+       // 可以简写成
+       let fn2 = x => x*x
+
+       // 特别注意， 在简化的时候， 如果要return的内容有{}， 在要加一个小括号，防止歧义
+       let fn3 = ()=>({uname:'zs',age:20})
+    </script>
+</body>
+</html>

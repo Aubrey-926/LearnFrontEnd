@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 推荐写法， 用剩余参数替代arguments
+        // ...是语法符号，放在最末函数参数之前， 用于获取多余的实参， 获取剩余实参， 是真数组
+        function fn(...c){
+            let num = 0 ;
+            for(let i = 0; i <c.length;i++){
+                num+=c[i];
+            }
+            console.log(num);
+        }
+
+
+        fn(1,23,4,5,6,6,11)
+    </script>
+</body>
+</html>

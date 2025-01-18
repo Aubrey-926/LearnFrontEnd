@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        箭头函数只能用...动态获取实参
+        箭头函数表示表达式函数， 不存在函数提升
+        一般用作某个函数的参数，简化代码
+         */
+
+         // 等待一秒钟之后打印123
+        setTimeout(() => {
+           console.log(123); 
+        }, 1000);
+
+
+        function sum(){
+            let num = 0;
+            // 函数有一个固定的参数， arguments， 是伪数组， 动态获取参数的实参
+            for(let i = 0 ; i < arguments.length;i++){
+                num += arguments[i];
+            }
+            console.log(num);
+        }
+        sum(10,20,5,66);//实参没有固定数量
+
+    
+
+        </script>
+</body>
+</html>
